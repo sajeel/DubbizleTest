@@ -16,6 +16,7 @@
 		38326E1B275B4B3C007913ED /* DubbizleTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38326E1A275B4B3C007913ED /* DubbizleTestTests.swift */; };
 		38326E25275B4B3C007913ED /* DubbizleTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38326E24275B4B3C007913ED /* DubbizleTestUITests.swift */; };
 		38326E27275B4B3C007913ED /* DubbizleTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38326E26275B4B3C007913ED /* DubbizleTestUITestsLaunchTests.swift */; };
+		81D559F9B7F8A6EBB1DBFBFF /* Pods_DubbizleTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3C186C8D8A433D97A4032B /* Pods_DubbizleTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,9 @@
 		38326E20275B4B3C007913ED /* DubbizleTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DubbizleTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38326E24275B4B3C007913ED /* DubbizleTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubbizleTestUITests.swift; sourceTree = "<group>"; };
 		38326E26275B4B3C007913ED /* DubbizleTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubbizleTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		55F8419524435F842641B095 /* Pods-DubbizleTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DubbizleTest.debug.xcconfig"; path = "Target Support Files/Pods-DubbizleTest/Pods-DubbizleTest.debug.xcconfig"; sourceTree = "<group>"; };
+		7D3C186C8D8A433D97A4032B /* Pods_DubbizleTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DubbizleTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC231B5D4E4A4E7E2306EC0 /* Pods-DubbizleTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DubbizleTest.release.xcconfig"; path = "Target Support Files/Pods-DubbizleTest/Pods-DubbizleTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81D559F9B7F8A6EBB1DBFBFF /* Pods_DubbizleTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10B28A78F1E98D26396C983F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55F8419524435F842641B095 /* Pods-DubbizleTest.debug.xcconfig */,
+				FBC231B5D4E4A4E7E2306EC0 /* Pods-DubbizleTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		38326DF7275B4B39007913ED = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +98,8 @@
 				38326E19275B4B3C007913ED /* DubbizleTestTests */,
 				38326E23275B4B3C007913ED /* DubbizleTestUITests */,
 				38326E01275B4B39007913ED /* Products */,
+				10B28A78F1E98D26396C983F /* Pods */,
+				AA80F7FD0F24226B8390B45B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +144,14 @@
 			path = DubbizleTestUITests;
 			sourceTree = "<group>";
 		};
+		AA80F7FD0F24226B8390B45B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D3C186C8D8A433D97A4032B /* Pods_DubbizleTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38326E2A275B4B3C007913ED /* Build configuration list for PBXNativeTarget "DubbizleTest" */;
 			buildPhases = (
+				0CF8610E8FBAEA74C3E4D3BF /* [CP] Check Pods Manifest.lock */,
 				38326DFC275B4B39007913ED /* Sources */,
 				38326DFD275B4B39007913ED /* Frameworks */,
 				38326DFE275B4B39007913ED /* Resources */,
+				FBB0745951522CA70BDA4DC2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +279,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CF8610E8FBAEA74C3E4D3BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DubbizleTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBB0745951522CA70BDA4DC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DubbizleTest/Pods-DubbizleTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DubbizleTest/Pods-DubbizleTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DubbizleTest/Pods-DubbizleTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		38326DFC275B4B39007913ED /* Sources */ = {
@@ -434,6 +503,7 @@
 		};
 		38326E2B275B4B3C007913ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55F8419524435F842641B095 /* Pods-DubbizleTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -461,6 +531,7 @@
 		};
 		38326E2C275B4B3C007913ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBC231B5D4E4A4E7E2306EC0 /* Pods-DubbizleTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
