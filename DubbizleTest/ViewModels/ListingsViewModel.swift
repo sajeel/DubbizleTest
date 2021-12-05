@@ -51,7 +51,7 @@ class ListingsViewModel {
         
         output
             
-            .share(replay: 1, scope: SubjectLifetimeScope.whileConnected)
+           // .share(replay: 1, scope: SubjectLifetimeScope.whileConnected)
             .bind(to: ads)
             .disposed(by: bag)
         
